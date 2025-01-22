@@ -68,6 +68,8 @@ ETHERSCAN_API_KEY=B87PYRH9ursejigN1EXN7EY
 $ cd Galerie
 $ npx hardhat node
 ```
+- It's necessary to bootup the local blockchain network before setting up your metmask Network configurations for Hardhat! 
+
 ### 6. Download Metamask Browser Extension
 - Ensure you correctly setup the Extension according to step 7 for proper working of the application
 
@@ -80,7 +82,7 @@ $ npx hardhat node
 
 
 ### 8. Migrate Smart Contracts
-`npx hardhat run src/backend/scripts/deploy.js --network localhost`
+`npx hardhat run src/backend/scripts/deploy.js --network https://galerie-one.vercel.app`
 
 ### 9. Run Tests
 `$ npx hardhat test`
