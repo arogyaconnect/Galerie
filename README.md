@@ -1,8 +1,8 @@
 # Web3 based Digital NFT MarketPlace for Artisans and Collectors
 
 ## Technology Stack & Tools
-- Solidity (Writing Smart Contract)
-- Javascript (React & Testing)
+- [Solidity](https://docs.soliditylang.org/en/latest/) (Writing Smart Contract)
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) (React & Testing)
 - [Ethers](https://docs.ethers.io/v5/) (Blockchain Interaction)
 - [Hardhat](https://hardhat.org/) (Development Framework)
 - [Ipfs](https://ipfs.io/) (Metadata storage)
@@ -68,21 +68,23 @@ ETHERSCAN_API_KEY=B87PYRH9ursejigN1EXN7EY
 $ cd Galerie
 $ npx hardhat node
 ```
+### 6. Download Metamask Browser Extension
+- Ensure you correctly setup the Extension according to step 7 for proper working of the application
 
-### 6. Connect development blockchain accounts to Metamask Browser Extension
+### 7. Connect development blockchain accounts to Metamask Browser Extension
 - Copy private key of the addresses from the terminal and import to Metamask
 - Connect your metamask to hardhat blockchain, network 127.0.0.1:8545.
 - If you have not added hardhat to the list of networks on your metamask, open up a browser, click the fox icon, then click the top center dropdown button that lists all the available networks then click add networks. A form should pop up. For the "Network Name" field enter "Hardhat". For the "New RPC URL" field enter "http://127.0.0.1:8545". For the chain ID enter "31337". Then click save.  
 
 
-### 7. Migrate Smart Contracts
+### 8. Migrate Smart Contracts
 `npx hardhat run src/backend/scripts/deploy.js --network localhost`
 
-### 8. Run Tests
+### 9. Run Tests
 `$ npx hardhat test`
 
 
-### 9. Launch Frontend
+### 10. Launch Frontend
 `$ npm run start`
 
 To test as a telegram mini app, install cloudflare extension on VSCode and start it to obtain public accessible URL , use this URL to setup the telegram mini app through
